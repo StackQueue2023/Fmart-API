@@ -8,7 +8,7 @@ const { MinKey } = require('bson');
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://BalaSankar:BalaSankar%402004@cluster0.dlyxypn.mongodb.net/FMART", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://BalaSankar:BalaSankar%402004@cluster0.dlyxypn.mongodb.net/FMART")
     .then(() => { 
         console.log("MongoDB connected");
         app.listen(3001, () => {
